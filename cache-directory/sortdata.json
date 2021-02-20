@@ -1,0 +1,895 @@
+{
+    "python:S101": {
+        "data": [
+            {
+                "src": "class Circuit_EDSRTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_GGD_EDSRTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_GGD_SUBEDSRTests(TestCase):"
+            },
+            {
+                "src": "class InstructionCircuit_EDSRTests(StaticLiveServerTestCase):"
+            },
+            {
+                "src": "class InstructionCircuit_GGD_EDSRTests(StaticLiveServerTestCase):"
+            },
+            {
+                "src": "class InstructionCircuit_GGD_SUBEDSRTests(StaticLiveServerTestCase):"
+            },
+            {
+                "src": "class Circuit_OrganisateurTests(TestCase):"
+            },
+            {
+                "src": "class Aiguillage_OrganisateurTests(TestCase):"
+            },
+            {
+                "src": "class Avmt_Clonage(TestCase):"
+            },
+            {
+                "src": "class Acces_MediaTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_EDSR_SansPreavisTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_GGD_EDSR_SansEdsrTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_GGD_EDSR_SansPreavisTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_GGD_SUBEDSR_SansPreavisTests(TestCase):"
+            },
+            {
+                "src": "class Circuit_Instruction_IconTests(TestCase):"
+            },
+            {
+                "src": "class InstructionCircuit_EDSRTests(SeleniumCommunClass):"
+            },
+            {
+                "src": "class InstructionCircuit_GGD_EDSRTests(SeleniumCommunClass):"
+            },
+            {
+                "src": "class InstructionCircuit_GGD_SUBEDSRTests(SeleniumCommunClass):"
+            }
+        ]
+    },
+    "python:S1066": {
+        "data": [
+            {
+                "src": "            if instance.get_instance().get_workflow_ggd() == Instance.WF_EDSR:"
+            },
+            {
+                "src": "                if not EDSRAvis.objects.filter(authorization=instance).exists():"
+            },
+            {
+                "src": "            if not GGDAvis.objects.filter(authorization=instance).exists():"
+            },
+            {
+                "src": "            if instance.get_instance().get_workflow_sdis() == Instance.WF_SDIS:"
+            },
+            {
+                "src": "                if not SDISAvis.objects.filter(authorization=instance).exists():"
+            },
+            {
+                "src": "            if not DDSPAvis.objects.filter(authorization=instance).exists():"
+            },
+            {
+                "src": "            if not CGAvis.objects.filter(authorization=instance).exists():"
+            },
+            {
+                "src": "            if cleaned_data['tabs'] == [str(tab.id) for tab in self.initial['tabs']]:"
+            },
+            {
+                "src": "            if not bool(set(user_groupes).intersection(set(help_groupes))):"
+            },
+            {
+                "src": "            if not bool(set(user_roles).intersection(set(help_roles))):"
+            },
+            {
+                "src": "            if user_departement not in departements:"
+            },
+            {
+                "src": "        if 'recherche' in request.POST and request.POST['recherche']:"
+            },
+            {
+                "src": "            if hasattr(self, 'detail_serializer_class'):"
+            },
+            {
+                "src": "            if hasattr(self, 'rendre_serializer_class'):"
+            },
+            {
+                "src": "        if not os.path.exists(value.path):"
+            },
+            {
+                "src": "                    if Manif.objects.filter(pk=url[3]).exists():"
+            },
+            {
+                "src": "                if len(url) &gt; 2 and url[2].isdecimal():"
+            },
+            {
+                "src": "                if not (len(url) &gt; 1 and url[2] in ['login', 'confirm-email', 'email_confirmed', 'inactive']) and not (len(url) &gt; 2 and url[2] == 'password' and len(url) &gt; 3 and url[3] == \\reset\\):"
+            },
+            {
+                "src": "                if url[1] in ['messagerie', 'instructions']:"
+            },
+            {
+                "src": "                if group.name == \\Instructeurs\\ or \\\\"
+            },
+            {
+                "src": "            if obj.organisateur.structure.manifs.filter(instruction__isnull=False).exists():"
+            },
+            {
+                "src": "                if not request.user.is_superuser and \\Administrateurs techniques\\ not in request.user.groups.values_list('name', flat=True):"
+            },
+            {
+                "src": "            if not request.user.is_superuser and \\Administrateurs techniques\\ not in request.user.groups.values_list('name', flat=True):"
+            },
+            {
+                "src": "            if hasattr(form.base_fields, 'default_instance'):"
+            },
+            {
+                "src": "            if User.objects.filter(username__iexact=uname):"
+            },
+            {
+                "src": "            if cleaned_data['is_active']:"
+            },
+            {
+                "src": "            if getattr(manif.cerfa, field.attname):"
+            },
+            {
+                "src": "        if group in user.groups.values_list('name', flat=True):"
+            },
+            {
+                "src": "        if hasattr(obj, attr):"
+            },
+            {
+                "src": "                if not user.last_change_password or user.last_change_password &lt; date_change:"
+            },
+            {
+                "src": "        if request.subdomain:"
+            },
+            {
+                "src": "                if AccessToken.objects.filter(token=auth[1]).exists():"
+            },
+            {
+                "src": "            if obj.natura2ksiteconfig.charte_dispense_acceptee:"
+            },
+            {
+                "src": "            if hasattr(instance.manif, 'n2kevaluation'):"
+            },
+            {
+                "src": "                        if not manif.sites_natura2000.all():"
+            },
+            {
+                "src": "                        if not manif.sites_natura2000.all():            # la manif n'est pas sur un site n2k =&gt; next"
+            },
+            {
+                "src": "                        if manif.emprise == EMPRISE['total']:           # la manif est en totalit\\u00e9 sur la voie publique"
+            },
+            {
+                "src": "                    if application_criteres(decision()):"
+            },
+            {
+                "src": "                if request.user.has_role('instructeur') and self.manif.instruction.get_instructeurs_prefecture(arr_wrt=True):"
+            },
+            {
+                "src": "            if request.user == self.manif.structure.organisateur.user:"
+            },
+            {
+                "src": "            if self.manif.cerfa.vehicules:"
+            },
+            {
+                "src": "            if manif.cerfa.vehicules:"
+            },
+            {
+                "src": "                    if datetime.date.today() &gt;= date_etape.date() - datetime.timedelta(days=5):"
+            },
+            {
+                "src": "            if hasattr(kwargs['instance'], 'prive') and kwargs['instance'].prive:"
+            },
+            {
+                "src": "                if 'initial' in kwargs:"
+            },
+            {
+                "src": "                if not instance.natura2kdepartementconfig.pdesi:"
+            },
+            {
+                "src": "            if begin_date &lt; timezone.now():"
+            },
+            {
+                "src": "            if Manif.objects.filter(nom=nom).exists():"
+            },
+            {
+                "src": "                if not self.n2kevaluation.formulaire_n2k_complet():"
+            },
+            {
+                "src": "                if not self.rnrevaluation.formulaire_rnr_complet():"
+            },
+            {
+                "src": "            if int(form['emprise'].data) in [Manif.EMPRISE['hors'], Manif.EMPRISE['partiel']]:"
+            },
+            {
+                "src": "                if not self.object.n2kevaluation.formulaire_n2k_complet():"
+            },
+            {
+                "src": "                if not self.object.rnrevaluation.formulaire_rnr_complet():"
+            },
+            {
+                "src": "            if form.instance.sites_natura2000.all().count() == 1:"
+            },
+            {
+                "src": "                if hasattr(form.instance, 'n2kevaluation') and not (form.instance.n2kevaluation.pourquoi_instructeur or"
+            },
+            {
+                "src": "                if form.initial[field]:"
+            },
+            {
+                "src": "                if not form.initial[field]:"
+            },
+            {
+                "src": "            if not UserHelper.has_role(request.user, 'instructeur'):"
+            },
+            {
+                "src": "                if instance.structure.organisateur.user != request.user:"
+            },
+            {
+                "src": "            if created:"
+            },
+            {
+                "src": "            if not self.rounds_safety:"
+            },
+            {
+                "src": "            if self.big_budget or self.lucrative or self.big_title or self.motor_on_closed_road or self.approval_request:"
+            },
+            {
+                "src": "            if Avis.objects.get(pk=obj.pk).preavis.all():"
+            },
+            {
+                "src": "            if self.instance.service_concerne != 'cgd':"
+            },
+            {
+                "src": "                if request.user in instruction.get_instructeurs_mairie():"
+            },
+            {
+                "src": "            if self.avis:"
+            },
+            {
+                "src": "                if hasattr(service.departement, 'ggd'):"
+            },
+            {
+                "src": "                if hasattr(service.departement, 'edsr') and avis.etat != 'demand\\u00e9':"
+            },
+            {
+                "src": "            if self.etat == 'demand\\u00e9e':"
+            },
+            {
+                "src": "                if instance.get_workflow_ggd() != Instance.WF_GGD_SUBEDSR:"
+            },
+            {
+                "src": "        if AutorisationAcces.objects.filter(avis_id=value.id).count() != 0:"
+            },
+            {
+                "src": "                if UserHelper.get_role_name(self.request.user) == 'edsragent':"
+            },
+            {
+                "src": "                if not Avis.objects.filter(service_concerne='sdis').filter(instruction=form.instance).exists():"
+            },
+            {
+                "src": "                if form.instance.manif.get_cerfa().consultServices == AbstractInstructionConfig.LISTE_MODE_CONSULT['Consultation obligatoire']:"
+            },
+            {
+                "src": "                    if form.instance.get_nb_avis() &lt; 2:"
+            },
+            {
+                "src": "            if form.instance.manif.get_cerfa().consultServices == AbstractInstructionConfig.LISTE_MODE_CONSULT['Consultation obligatoire']:"
+            },
+            {
+                "src": "                if form.instance.get_nb_avis() &lt; 2:"
+            },
+            {
+                "src": "            if dept:"
+            },
+            {
+                "src": "                            if instruction.get_avis_user(user).etat == \\demand\\u00e9\\:"
+            },
+            {
+                "src": "                            if instruction.get_avis_user(user).etat == \\transmis\\:"
+            },
+            {
+                "src": "                            if instruction.get_avis_user(user).etat == \\format\\u00e9\\:"
+            },
+            {
+                "src": "                            if instruction.get_avis_user(user).etat == \\distribu\\u00e9\\:"
+            },
+            {
+                "src": "                            if instruction.get_avis_user(user).etat in [\\distribu\\u00e9\\, \\format\\u00e9\\]:"
+            },
+            {
+                "src": "        if manif:"
+            },
+            {
+                "src": "                if user.has_role('agentlocal'):"
+            },
+            {
+                "src": "            if manifestation.structure.organisateur in recipients:"
+            },
+            {
+                "src": "            if 'compagnieagent' in self.role and 'compagnieagentlocal' not in self.role:"
+            },
+            {
+                "src": "            if obj.structure.manifs.filter(instruction__isnull=False).exists():"
+            },
+            {
+                "src": "                if not request.user.is_superuser and \\\\"
+            },
+            {
+                "src": "            if not request.user.is_superuser and not \\Administrateurs techniques\\ in request.user.groups.values_list('name', flat=True):"
+            }
+        ]
+    },
+    "python:S108": {
+        "data": [
+            {
+                "src": "            pass"
+            },
+            {
+                "src": "                pass"
+            }
+        ]
+    },
+    "python:S1110": {
+        "data": [
+            {
+                "src": "                'fields': (('dans_calendrier', 'prive', 'cache', 'afficher_adresse_structure'))}"
+            },
+            {
+                "src": "        ('Calendrier', {'classes': ('collapse',), 'fields': (('registered_calendar', 'private', 'hidden', 'show_structure_address'))}),"
+            },
+            {
+                "src": "                        'fields': (('registered_calendar', 'private', 'hidden', 'show_structure_address'))}),"
+            }
+        ]
+    },
+    "python:S112": {
+        "data": [
+            {
+                "src": "        raise Exception("
+            }
+        ]
+    },
+    "python:S117": {
+        "data": [
+            {
+                "src": "    Service = apps.get_model('administration', 'Service')"
+            },
+            {
+                "src": "    Panel = apps.get_model('aide', 'HelpAccordionPanel')"
+            },
+            {
+                "src": "    PanelTabs = apps.get_model('aide', 'PanelTabs')"
+            },
+            {
+                "src": "    FromModel = apps.get_model(from_app, from_model_name)"
+            },
+            {
+                "src": "    ToModel = apps.get_model(to_app, to_model_name)"
+            },
+            {
+                "src": "    User = apps.get_model('core', 'user')"
+            },
+            {
+                "src": "    Manifestation = apps.get_model('events', 'Manifestation')"
+            },
+            {
+                "src": "        natureDocument = self.documents.last().nature"
+            }
+        ]
+    },
+    "python:S1186": {
+        "data": [
+            {
+                "src": "    def add_arguments(self, parser):"
+            },
+            {
+                "src": "    def ready(self):"
+            }
+        ]
+    },
+    "python:S1481": {
+        "data": [
+            {
+                "src": "            content = Bs(demande.contenu, \\html.parser\\)"
+            },
+            {
+                "src": "            url = 'https://' + Site.objects.get_current().domain + '/admin/aide/demande/' + str(demande.pk) + '/change/'"
+            },
+            {
+                "src": "            beta = \\\\"
+            },
+            {
+                "src": "        nowfmt = now.strftime"
+            },
+            {
+                "src": "                resolver = dns.resolver"
+            },
+            {
+                "src": "                            future = executor.submit(change_password, page, passwd)"
+            },
+            {
+                "src": "        bad_passs= 0"
+            },
+            {
+                "src": "        result = []"
+            },
+            {
+                "src": "        for _iteration in range(iterations):"
+            },
+            {
+                "src": "        referer = self.request.META.get('HTTP_REFERER')"
+            },
+            {
+                "src": "    except Exception as e:"
+            },
+            {
+                "src": "        _declaration = EventDeclarationFactory.create(manifestation=manifestation)"
+            },
+            {
+                "src": "        departement = manifestation.ville_depart.get_departement()"
+            },
+            {
+                "src": "        retour = presence_avis('agent_group', 'rendu', log=False)"
+            },
+            {
+                "src": "        test = self.selenium.find_element_by_id('filtre_mail').click()"
+            }
+        ]
+    },
+    "python:S1515": {
+        "data": [
+            {
+                "src": "        map_fk_col = (lambda c: \\{0}_id\\.format(base_to_model).lower()"
+            },
+            {
+                "src": "        if c == \\{0}_id\\.format(base_from_model).lower()"
+            },
+            {
+                "src": "                    destinataires.append({\\service\\: service, \\lu\\: lu}) if len(list(filter(lambda sch: sch['service'] == service, destinataires))) == 0 else \\\\"
+            }
+        ]
+    },
+    "python:S1542": {
+        "data": [
+            {
+                "src": "def AjoutVuePanelAjax(request, pk=None):"
+            },
+            {
+                "src": "    def Purge_description_fields(sender, instance, raw, created, **kwargs):"
+            },
+            {
+                "src": "def LastMsg(value):"
+            },
+            {
+                "src": "def separeLaFleche(value):"
+            }
+        ]
+    },
+    "python:S1656": {
+        "data": [
+            {
+                "src": "        intruction_qs = intruction_qs"
+            }
+        ]
+    },
+    "python:S1845": {
+        "data": [
+            {
+                "src": "    type = models.CharField(max_length=50, choices=TYPE, verbose_name='Type de consultation')"
+            },
+            {
+                "src": "    status = models.SmallIntegerField(choices=STATUS, default=NORMAL, verbose_name=\\Statut\\)"
+            },
+            {
+                "src": "    emprise = models.SmallIntegerField(\\Emprise sur voie publique\\, choices=CHOIX_EMPRISE, default=EMPRISE['null'], blank=True)"
+            }
+        ]
+    },
+    "python:S1854": {
+        "data": [
+            {
+                "src": "            reponse = self.client.post(url_script.group('url'), {'itineraire_horaire': file5}, follow=True,"
+            }
+        ]
+    },
+    "python:S1871": {
+        "data": [
+            {
+                "src": "                return False"
+            },
+            {
+                "src": "                return  False"
+            },
+            {
+                "src": "                            instruction.css = \\table_encours\\"
+            },
+            {
+                "src": "            action_pk = doc_associe"
+            },
+            {
+                "src": "            action_pk = None"
+            }
+        ]
+    },
+    "python:S2208": {
+        "data": [
+            {
+                "src": "from administration.factories.service import *"
+            },
+            {
+                "src": "from administration.models import *"
+            },
+            {
+                "src": "from administration.views.ajax import *"
+            },
+            {
+                "src": "from administration.models.service import *"
+            },
+            {
+                "src": "from .models import *"
+            },
+            {
+                "src": "from agreements.models import *"
+            },
+            {
+                "src": "from ..factories import *"
+            },
+            {
+                "src": "from administration.factories import *"
+            },
+            {
+                "src": "from .views import *"
+            },
+            {
+                "src": "from ..models import *"
+            },
+            {
+                "src": "from ..forms import *"
+            },
+            {
+                "src": "from organisateurs.models import *"
+            },
+            {
+                "src": "from evenements.models import *"
+            },
+            {
+                "src": "from configuration.settings import *"
+            },
+            {
+                "src": "from instructions.models import *"
+            },
+            {
+                "src": "from organisateurs.decorators import *"
+            },
+            {
+                "src": "from events.models import *"
+            },
+            {
+                "src": "from instructions.views.instruction import *"
+            },
+            {
+                "src": "from instructions.views.avis import *"
+            },
+            {
+                "src": "from instructions.views.preavis import *"
+            },
+            {
+                "src": "from instructions.views.tableaudebord import *"
+            },
+            {
+                "src": "from messagerie.models import *"
+            },
+            {
+                "src": "from .views.message import *"
+            },
+            {
+                "src": "from ..decorators import *"
+            }
+        ]
+    },
+    "python:S2734": {
+        "data": [
+            {
+                "src": "        return super().__init__(*args, **kwargs)"
+            }
+        ]
+    },
+    "python:S2737": {
+        "data": [
+            {
+                "src": "            raise"
+            }
+        ]
+    },
+    "python:S2772": {
+        "data": [
+            {
+                "src": "    pass"
+            }
+        ]
+    },
+    "python:S3626": {
+        "data": [
+            {
+                "src": "        return"
+            },
+            {
+                "src": "                return"
+            }
+        ]
+    },
+    "python:S3776": {
+        "data": [
+            {
+                "src": "    def get_queryset(self):"
+            },
+            {
+                "src": "def check_affichage_elements(user, query):"
+            },
+            {
+                "src": "def check_page(user, page):"
+            },
+            {
+                "src": "def page_aide(request, path, pk=None):"
+            },
+            {
+                "src": "def demande(request):"
+            },
+            {
+                "src": "    def test_Circuit_EDSR(self):"
+            },
+            {
+                "src": "    def test_Circuit_GGD_EDSR(self):"
+            },
+            {
+                "src": "    def test_Circuit_GGD_SUBEDSR(self):"
+            },
+            {
+                "src": "    def create_user(self, username, area, role, record=True, return_data_on_failure=False):"
+            },
+            {
+                "src": "    def __call__(self, request):"
+            },
+            {
+                "src": "    def handle(self, *args, **options):"
+            },
+            {
+                "src": "def remplir_tableau_roles(apps, schema_editor):"
+            },
+            {
+                "src": "def movetocore(app_liste):"
+            },
+            {
+                "src": "    def get_login_redirect_url(self, request):"
+            },
+            {
+                "src": "    def get_role_instance(user, role=None):"
+            },
+            {
+                "src": "def media_access(request, path):"
+            },
+            {
+                "src": "    def clean(self):"
+            },
+            {
+                "src": "    def Purge_description_fields(sender, instance, raw, created, **kwargs):"
+            },
+            {
+                "src": "    def evaluation_rnr_requise(cls, manif):"
+            },
+            {
+                "src": "    def evaluation_n2k_requise(cls, manif, cause):"
+            },
+            {
+                "src": "    def __init__(self, *args, **kwargs):"
+            },
+            {
+                "src": "    def get_breadcrumbs(self):"
+            },
+            {
+                "src": "    def ecrire_delai(self, manif=None, all=False):"
+            },
+            {
+                "src": "    def dossier_complet(self):"
+            },
+            {
+                "src": "    def liste_manquants(self):"
+            },
+            {
+                "src": "    def get(self, request):"
+            },
+            {
+                "src": "    def export(request, pk, avis=None, preavis=None, preferelezip=False):"
+            },
+            {
+                "src": "    def get_context_data(self, **kwargs):"
+            },
+            {
+                "src": "    def get_form(self, form_class=None):"
+            },
+            {
+                "src": "    def get(self, request, *args, **kwargs):"
+            },
+            {
+                "src": "    def do(self):"
+            },
+            {
+                "src": "def verifier_secteur_instruction(function=None, arr_wrt=False):"
+            },
+            {
+                "src": "    def get_avis_user(self, user):"
+            },
+            {
+                "src": "    def get_all_agents(self):"
+            },
+            {
+                "src": "    def get_instructeurs_prefecture(self, arr_wrt):"
+            },
+            {
+                "src": "    def test_Acces_Media(self):"
+            },
+            {
+                "src": "    def presence_avis(self, username, state):"
+            },
+            {
+                "src": "    def test_Circuit_EDSR_SansPreavis(self):"
+            },
+            {
+                "src": "    def test_Circuit_GGD_EDSR_SansPreavis(self):"
+            },
+            {
+                "src": "    def test_Circuit_GGD_SUBEDSR_SansPreavis(self):"
+            },
+            {
+                "src": "    def test_Circuit_Instruction(self):"
+            },
+            {
+                "src": "    def form_valid(self, form):"
+            },
+            {
+                "src": "def get_instructions(user, temporalite, filtre_specifique, role, instance, request, annee=None):"
+            },
+            {
+                "src": "    def get(self, request, role=None):"
+            },
+            {
+                "src": "def get_carnet(request, manif=None):"
+            },
+            {
+                "src": "    def creer_et_envoyer(self, type_msg, expediteur, destinataires, titre, contenu, manifestation_liee=None,"
+            },
+            {
+                "src": "def envoi_msg_celery(self, msg_json, type_envoi):"
+            },
+            {
+                "src": "    def post(self, request):"
+            },
+            {
+                "src": "def remplir_services(request):"
+            },
+            {
+                "src": "def verifier_acces(function=None):"
+            },
+            {
+                "src": "    def notify_and_mail(self, recipients, subject, target, manifestation, template=None):"
+            },
+            {
+                "src": "def verifier_proprietaire(function=None):"
+            }
+        ]
+    },
+    "python:S4144": {
+        "data": [
+            {
+                "src": "    def cerfa(self):"
+            }
+        ]
+    },
+    "python:S4830": {
+        "data": [
+            {
+                "src": "        response = requests.get(login_url, verify=False)"
+            },
+            {
+                "src": "        response = requests.get(error_url, verify=False)"
+            }
+        ]
+    },
+    "python:S5603": {
+        "data": [
+            {
+                "src": "        def affichage_avis():"
+            }
+        ]
+    },
+    "python:S5754": {
+        "data": [
+            {
+                "src": "        except:"
+            },
+            {
+                "src": "    except:"
+            },
+            {
+                "src": "                except:"
+            },
+            {
+                "src": "            except:"
+            },
+            {
+                "src": "                    except:"
+            },
+            {
+                "src": "                        except:"
+            },
+            {
+                "src": "                            except:"
+            }
+        ]
+    },
+    "python:S5795": {
+        "data": [
+            {
+                "src": "    DATABASES = {k: v for k, v in DATABASES.items() if k is 'default'}"
+            }
+        ]
+    },
+    "python:S5806": {
+        "data": [
+            {
+                "src": "        zip = self.cleaned_data['zip_code']"
+            },
+            {
+                "src": "        dict = {'autorisationnm': 'anm', 'declarationnm': 'dnm', 'motorizedconcentration': 'avtmc', 'motorizedevent': 'avtm', 'motorizedrace': 'avtmcir'}"
+            },
+            {
+                "src": "        eval = manif.rnrevaluation"
+            },
+            {
+                "src": "        eval = manif.n2kevaluation"
+            },
+            {
+                "src": "        dir, base_filename = os.path.split(file.path)"
+            },
+            {
+                "src": "                        id = int(instance_choix) - 1"
+            },
+            {
+                "src": "                        type = \\action\\"
+            },
+            {
+                "src": "        algorithm, iterations, salt, hash = user.password.split('$', 3)"
+            },
+            {
+                "src": "            list = []"
+            },
+            {
+                "src": "                        display = type(role_instance)._meta.object_name"
+            },
+            {
+                "src": "    hash = hashlib.md5()"
+            },
+            {
+                "src": "        hash = hashlib.sha512(salt.encode() + password).digest()"
+            },
+            {
+                "src": "        algorithm, iterations, salt, hash = encoded.split('$', 3)"
+            },
+            {
+                "src": "                    dir, base_filename = os.path.split(file)"
+            }
+        ]
+    }
+}

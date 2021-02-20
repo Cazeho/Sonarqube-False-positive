@@ -1,0 +1,10 @@
+{
+	"sonarqube": {
+   	"project":"ecomanif",
+	"branch":"master",
+	"username":"admin",
+	"password":"admin"
+   	
+
+	}
+}
